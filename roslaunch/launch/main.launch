@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="roslaunch" type="main" name="roslaunch" output="screen" respawn="true" />
+</launch>

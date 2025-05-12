@@ -1,0 +1,22 @@
+---
+subscribers:
+  - name: test_1
+    topic: "test_1"
+    timeout: 5.0
+    priority: 1
+    message_type: "Twist"
+  - name: test_2
+    topic: "test_2"
+    timeout: 5.0
+    priority: 10
+    message_type: "TwistStamped"
+  - name: test_3
+    topic: "test_3"
+    timeout: 5.0
+    priority: 100
+    message_type: "TwistWithCovariance"
+publisher:
+  topic: "cmd_vel"
+  message_type: "Twist"
+  # message_type: "TwistStamped"
+  # message_type: "TwistWithCovariance"

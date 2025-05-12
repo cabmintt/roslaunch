@@ -1,0 +1,7 @@
+<library path="lib/libtest_nodelet">
+  <class name="test/TestNodelet" type="test::TestNodelet" base_class_type="nodelet::Nodelet">
+    <description>
+      TestNodelet loads configuration from a YAML file.
+    </description>
+  </class>
+</library>

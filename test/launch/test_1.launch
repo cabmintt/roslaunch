@@ -1,0 +1,22 @@
+<launch>
+  <arg name="roslaunch_used"   default="$(env roslaunch_used)"/>
+  <arg name="test_2"        default="$(optenv test_2 true)"/>
+
+  <group if="$(eval roslaunch_used == true)">
+    <include file="$(find test)/launch/test_2.launch">
+        <arg name="manager"      value="test_manager" />
+        <arg name="config_file"  value="$(find test)/config/test.yaml"/>
+    </include>
+
+    <node pkg="test" type="test_1" name="test_1" output="screen" ns="$(env ROS_HOSTNAME)">
+        <rosparam command="load" file="$(find test)/config/test.yaml" subst_value="True"/>
+        <remap from="teleop"     to="remap/cmd_vel" />
+    </node>
+  </group>
+
+  <group if="$(eval test_2)">
+    <node pkg="test" type="test_2" name="test_2" output="screen" respawn="true" ns="$(env ROS_HOSTNAME)"/>
+  </group>
+
+
+</launch>

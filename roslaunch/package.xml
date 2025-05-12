@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>roslaunch</name>
+  <version>0.0.0</version>
+  <description>The roslaunch package</description>
+
+  <maintainer email="cabmintt@gmail.com">Minseo Jeong</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospack</build_depend>
+  <build_depend>pugixml</build_depend>
+  <build_depend>boost</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>nodelet</build_depend>
+  <build_depend>xmlrpccpp</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospack</build_export_depend>
+  <build_export_depend>pugixml</build_export_depend>
+  <build_export_depend>boost</build_export_depend>
+  <build_export_depend>roslib</build_export_depend>
+  <build_export_depend>nodelet</build_export_depend>
+  <build_export_depend>xmlrpccpp</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospack</exec_depend>
+  <exec_depend>pugixml</exec_depend>
+  <exec_depend>boost</exec_depend>
+  <exec_depend>roslib</exec_depend>
+  <exec_depend>yaml-cpp</exec_depend>
+  <exec_depend>nodelet</exec_depend>
+  <exec_depend>xmlrpccpp</exec_depend>
+
+</package>
